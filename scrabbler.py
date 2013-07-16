@@ -10,7 +10,7 @@ def load_anagrams():
     '''
     anagrams = collections.defaultdict(list)
 
-    with open('anadict.txt', 'r') as file_handle:
+    with open('anasowpods.txt', 'r') as file_handle:
         for line in file_handle:
             words = line.split()
             anagrams[tuple(words[0])] = words[1:]
